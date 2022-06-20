@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">   
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+        <style>
+       .form-control{
+        width:20%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        </style>
+        <title>Geometric Probability Law</title>
+    </head>
+<body>
+    <div class="container-fluid"></div>
+    
+    <h3 class="col-sm-12  mt-4 text-danger text-center mt-2">Geometric Distribution</h3>
+    <h3 class="col-sm-12  mt-3 text-danger text-center mt-2">P  ( X = k ) = ( 1 - p ) k - 1  p.</h3>
+        <h5 class="col-sm-10 offset-1   mt-5 text-black text-md-center mt-2">Geometric distribution is a type of discrete probability distribution that represents the probability of the number of successive failures before a success is obtained in a Bernoulli trial. A Bernoulli trial is an experiment that can have only two possible outcomes, ie., success or failure. In other words, in a geometric distribution, a Bernoulli trial is repeated until a success is obtained and then stopped.
+         Geometric distribution is widely used in several real-life scenarios. For example, in financial industries, geometric distribution is used to do a cost-benefit analysis to estimate the financial benefits of making a certain decision. In this article, we will study the meaning of geometric distribution, examples, and certain related important aspects.</h5>
+    </div>
+        <h1 class="col-sm-12 mt-5 text-danger text-center mt-2">Geometric Probability Law</h1>
+        <form action="/api/gpl" method="post">
+            <div class="col-sm-12 mt-2 mb-2">
+                <input id="n"type="text" name="num1"  class="form-control  " placeholder="Enter the value of p ">
+            </div>
+            <div class="col-sm-12 mt-2 mb-2">
+                <input id="k" type="text" name="num2" class="form-control" placeholder="Enter the value of k ">
+            </div>
+            <div  class="col-sm-12 text-center mt-2 mb-2">
+               <button type="submit" class="btn btn-primary justify-content-center">Submit</button>
+            </div>
+        </form>
+        <h1 class="col-sm-12 text-danger text-center mt-2"><%= result%></h1>
+        
+    </div> 
+</body>
+</html>
