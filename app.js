@@ -14,6 +14,7 @@ app.set("view engine", "ejs");
 app.get('/api',(req,res) => {
     res.status(200).send("Life is a School of Probability");
 })
+
  app.use("/api/gpl",gplRouter);
  app.use("/api/cpl",cplRouter);
  app.use("/api/bpl",bplRouter)
